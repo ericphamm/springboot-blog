@@ -8,8 +8,8 @@
 
 <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
   <div class="mb-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-blue-900 mb-2">ÚPRAVA ČLÁNKU</h1>
-    <div class="h-1 w-full bg-orange-500 mb-8"></div>
+    <h1 class="text-3xl md:text-4xl font-bold text-indigo-700 mb-2">ÚPRAVA ČLÁNKU</h1>
+    <div class="h-1 w-full bg-purple-500 mb-8"></div>
 
     <form class="space-y-6" method="post" th:action="@{'/articles/edit/' + ${articleId}}" th:object="${articleDTO}">
       <!-- Title Field -->
@@ -35,8 +35,8 @@
 
       <!-- Action Buttons -->
       <div class="flex flex-col sm:flex-row gap-4 pt-4">
-        <button type="submit" class="bg-blue-800 hover:bg-blue-900 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg">ULOŽIT</button>
-        <a th:href="@{/articles}" class="bg-blue-800 hover:bg-blue-900 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg text-center">ZPĚT NA SEZNAM</a>
+        <button type="submit" class="bg-indigo-600 hover:bg-blue-900 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg">ULOŽIT</button>
+        <a th:href="@{/articles}" class="bg-indigo-600 hover:bg-blue-900 text-white font-medium py-3 px-8 rounded-lg transition-all shadow-md hover:shadow-lg text-center">ZPĚT NA SEZNAM</a>
       </div>
     </form>
   </div>
