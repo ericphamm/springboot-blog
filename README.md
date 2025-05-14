@@ -27,8 +27,23 @@ A modern **personal blog web application** powered by **Spring Boot**, **Thymele
 ## 📸 Screenshots
 
 - Home page: Grid layout of articles
+  <img width="1359" alt="Screenshot 2025-05-14 at 8 30 31" src="https://github.com/user-attachments/assets/1ded32f4-e6ad-47ae-9032-2d570275fec0" />
+
 - Create/Edit: Full-featured form with HTML content input
+<img width="1359" alt="Screenshot 2025-05-14 at 8 38 38" src="https://github.com/user-attachments/assets/bb29fb1d-fdd3-40af-b40b-ecbb330632ed" />
+
+
+  
 - Article Detail: Beautiful, styled content layout
+<img width="1359" alt="Screenshot 2025-05-14 at 8 31 48" src="https://github.com/user-attachments/assets/62767195-756d-4f15-921d-92be5e3ff65f" />
+
+<img width="1359" alt="Screenshot 2025-05-14 at 8 34 40" src="https://github.com/user-attachments/assets/8e75edf6-63a8-4cab-8134-b40f5c95598c" />
+
+- Contact Form: Modern and elegant form
+
+<img width="1359" alt="Screenshot 2025-05-14 at 8 32 44" src="https://github.com/user-attachments/assets/8db14ea1-2600-4f6e-9b37-45336c5813f6" />
+
+
 
 ---
 
