@@ -91,8 +91,8 @@ The blog supports styled HTML content using **TinyMCE editor**. You can:
 ## 🙋 Author
 
 **Eric Pham**  
-Spring Boot Developer & Blogger  
-[LinkedIn](https://linkedin.com/in/your-profile) | [GitHub](https://github.com/your-username)
+Junior Software Developer 
+[LinkedIn](https://www.linkedin.com/in/ericthangpham) | [GitHub](http://github.com/ericphamm)
 
 ---
 
