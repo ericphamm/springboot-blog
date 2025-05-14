@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs-cz" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+
+<body class="min-h-screen flex flex-col bg-gray-50 text-gray-800">
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<div class="py-2 flash-message message-success" th:text="${success}" th:if="${success}"></div>
+<!-- Chybové hlášky -->
+<div class="py-2 flash-message message-error" th:text="${error}" th:if="${error}"></div>
+
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+  <div class="mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-indigo-700 mb-6">Seznam článků</h1>
+    <a th:href="@{/articles/create}" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+      Vytvořit nový článek
+    </a>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article th:each="article: ${articles}" class="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col p-6">
+      <h2 class="text-xl font-bold mb-3 text-gray-700">
+        <a th:href="@{'/articles/' + ${article.articleId}}" th:text="${article.title}"></a>
+      </h2>
+      <p class="text-gray-600 mb-4" th:text="${article.description}"></p>
+
+      <!-- Push this to the bottom -->
+      <div class="flex space-x-3 pt-2 mt-auto">
+        <a th:href="@{'/articles/edit/' + ${article.articleId}}" class="text-indigo-500 hover:text-indigo-800 font-medium text-sm transition-colors">
+          Editovat
+        </a>
+        <a th:href="@{'/articles/delete/' + ${article.articleId}}" class="text-red-500 hover:text-red-700 font-medium text-sm transition-colors">
+          Odstranit
+        </a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer th:replace="~{fragments/layout.html :: footer}" class="mt-auto"></footer>
+</body>
+</html>

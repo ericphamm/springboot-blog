@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<article>
+    <div id="centrovac" class="domu-article">
+        <header>
+            <h1>O mně</h1>
+        </header>
+
+        <section>
+            <p>
+                Vítejte na mém prvním webu, psát weby se teprve učím, ale myslím, že
+                mi to docela jde.
+            </p>
+        </section>
+
+        <img th:src="@{/images/avatar.jpg}" alt="Programátor HoBi"/>
+    </div>
+</article>
+
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</body>
+</html>
